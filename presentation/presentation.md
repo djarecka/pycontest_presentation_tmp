@@ -365,11 +365,11 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-## Our scientific project
+## Our scientific project 
 ---
 layout: false
 
-#### Simulation of moving balls in a box...
+#### <span style="color:purple"> Simulation of moving balls in a box...</span>
 
 Assumptions:
 
@@ -380,6 +380,11 @@ Assumptions:
 - all balls collisions are elastic, 
 
 - balls have different initial location and velocities.
+
+---
+#### <span style="color:purple"> Simulation of moving balls in a box...</span>
+
+/Users/dorota/pycontest/pytest_movie_1d_dt_0.1.html
 
 ---
 ### <span style="color:purple">Unit tests with Pytest library</span>
