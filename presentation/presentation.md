@@ -19,6 +19,20 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
+## Who are we?
+
+--
+
+- Dorota Jarecka 
+   - McGovern Institute of Brain Research, MIT
+   - PhD in Physics
+   
+- Anna Jaruga
+   - Environmental Science and Engineering, Caltech
+   - PhD in Physics
+
+---
+
 ## Learning objectives
 ---
 layout: false
@@ -111,6 +125,12 @@ layout: false
 - makes you think about desirable output
 
 - improves readability of your code
+   
+   - good usage examples for others and your future self
+   
+   - helps to reuse your code
+
+- raises your confidence when developing the code
 
 &nbsp;
 
@@ -304,8 +324,6 @@ Which framework should you use?
   def test_factorial_1():
       assert my_factorial(1) == 1
 
-  def test_factorial_2():
-      assert my_factorial(5) == 120
   ```
 
 - helpful traceback and failing assertion reporting
@@ -341,8 +359,27 @@ Full list of option:
   ```bash
   pytest -h
   ```
+---
 
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+## Our scientific project
+---
+layout: false
 
+#### Simulation of moving balls in a box...
+
+Assumptions:
+
+- all balls have the same size, but can have different masses,
+
+- box is rectangular,
+
+- all balls collisions are elastic, 
+
+- balls have different initial location and velocities.
 
 ---
 ### <span style="color:purple">Unit tests with Pytest library</span>
