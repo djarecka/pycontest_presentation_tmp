@@ -379,8 +379,8 @@ Full list of option:
 
   - Continuous Integration Services
 
-      - [Travis CI][https://travis-ci.org/]
-      - [CircleCI][https://circleci.com/]
+      - [Travis CI](https://travis-ci.org/)
+      - [CircleCI](https://circleci.com/)
       - ...
 
   <img src="img/travis1-crop.png" width="90%" />                                     
@@ -389,7 +389,11 @@ Full list of option:
 ---
 ### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
 
-- Todo
+- Create Travis CI account at [travis-ci.org](https://travis-ci.org/)
+  (sign in with your GitHub account)
+
+
+ 
 
 ---
 ### TODO<span style="color:purple">External resources</span>
