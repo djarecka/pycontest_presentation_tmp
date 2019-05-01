@@ -31,25 +31,7 @@ layout: false
 
 - What are the testing frameworks in Python?
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
-## Requirements
----
-layout: false
-
-- Your computer:
-
-  - Docker + Docker image - nipype/workshops:latest-base
-   or
-  - Python + Pytest
-
-- You:
-
-  - Python (basics of NumPy, Jupyter)
-
+- What is Continuos Integration?
 
 
 ---
@@ -132,8 +114,6 @@ layout: false
 
 &nbsp;
 
-[Examples from Nipype code](https://github.com/nipy/nipype/blob/master/nipype/pipeline/engine/tests/test_engine.py#L45)
-
 
 ---
 ###<span style="color:purple">Various types of tests</span>
@@ -181,6 +161,47 @@ layout: false
   - automating the process of verification, so you can do it on a regular basis
 
 ---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+## Setup
+---
+layout: false
+
+#### Python environment and text editor
+
+If you haven't prepare your environment, you can still do it:
+
+- Install conda: [follow instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
+
+- creating an environment:
+```bash
+$ conda create --name pycon numpy scipy matplotlib pytest hyphothesis
+```
+
+--
+
+Checking if you have library
+```bash
+$ python --version
+Python 3.7.3
+```
+
+```bash
+$ python -c "import matplotlib; print(matplotlib.__version__)"
+3.0.3
+```
+
+--
+
+- you should have your favourite text editor, if you don't, please install jupyter, eg.:
+
+```bash
+$ conda install jupyter
+```
+
+---
 
 name: inverse
 layout: true
@@ -189,6 +210,7 @@ class: center, middle, inverse
 ## Exercises
 ---
 layout: false
+TODO
 #### All notebooks with solutions to the following exercises can be found in the [repository](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/solutions)
 
 ---
@@ -203,7 +225,8 @@ assert Expression[, Arguments]
 
 - if the Expression is false, `assert` returns an `AssertionError`
 
-- a rendered version of a notebook with examples can be found  [here](http://nbviewer.jupyter.org/github/nipy/workshops/blob/master/170327-nipype/notebooks/testing/solutions/asserts.ipynb)
+
+- TODO: a rendered version of a notebook with examples can be found  [here](http://nbviewer.jupyter.org/github/nipy/workshops/blob/master/170327-nipype/notebooks/testing/solutions/asserts.ipynb)
 ---
 ### <span style="color:purple">Assert statement</span>
 
@@ -223,10 +246,6 @@ assert Expression[, Arguments]
   ```python
   assert 2 != 3
   ```
-  ```python
-  import math
-  assert math.pi == 3.14
-  ```
 
   ```python
   assert type(2) is int
@@ -238,61 +257,6 @@ assert Expression[, Arguments]
   assert 2 not in [1,2,3]
   ```
 
----
-### <span style="color:purple">Finding area of a sector of a circle </span>
-
-<img src="img/sector.png" width="40%" />
---
-
-- try to derive the equation
-- think about examples you can use to verify your solution, e.g.:
-  - what is the area when angle is 0?
-  - what is the area when angle is 360 deg?
-- write the python code to automatically test your solution
-
---
-
-&nbsp;
-
-An exemplary solution can be found [here](http://nbviewer.jupyter.org/github/nipy/workshops/blob/master/170327-nipype/notebooks/testing/solutions/sector_area.ipynb)
-
----
-### <span style="color:purple">Finding the positions of local maxima in a list of numbers  </span>
-
-Check the output of your function for these examples:
-
-- list: `[1, 2, 1, 0]`, expected output: `[1]`
-
-- list: `[-1, 2, 1, 3, 2]`, expected output: `[1, 3]`
-
-- list: `[4, 3, 4, 3]`, expected output: `[0, 2]`
-
-- list: `[1, 2, 3]`, expected output: `[2]`
-
---
-
-&nbsp;
-An exemplary solution can be found [here](http://nbviewer.jupyter.org/github/nipy/workshops/blob/master/170327-nipype/notebooks/testing/solutions/maxima.ipynb)
-
----
-### <span style="color:purple">Finding the mean absolute value of the list of pseudo-random numbers </span>
-
-- `random` library: pseudo-random number generator, e.g.
-  ```python
-  random.sample(range(-100, 100), 10)
-  ```
-
---
-
-- you don't know what is the expected value of the "experiment", but you can set a seed (`random.seed(3)`) and save the output
-
-  - the saved value can be used in a simple regression test as the expected value
-
---
-
-&nbsp;
-
-An exemplary solution can be found [here](http://nbviewer.jupyter.org/github/nipy/workshops/blob/master/170327-nipype/notebooks/testing/solutions/random_numbers.ipynb)
 ---
 name: inverse
 layout: true
@@ -331,9 +295,18 @@ Which framework should you use?
 - straightforward asserting with the assert statement
 
   ```python
-  def test_angle0():
-      assert sector_area(5, 0) == 0
-   ```
+  def my_factorial(n):
+      if n == 1 or n == 0:
+          return 1
+      else:
+          return n * my_factorial(n-1)
+
+  def test_factorial_1():
+      assert my_factorial(1) == 1
+
+  def test_factorial_2():
+      assert my_factorial(5) == 120
+  ```
 
 - helpful traceback and failing assertion reporting
 
@@ -343,42 +316,39 @@ Which framework should you use?
   # discovers all tests in all subdirectories
   pytest
   # runs all test from test_random.py file only
-  pytest tests_random.py
+  pytest tests_factorial.py
   # runs one specific test
-  pytest tests_random.py::test_1
+  pytest tests_factorial.py::test_factorial_1
   ```
 
-- many useful features including fixtures, test parametrization, etc.
+- many useful features including fixtures, test parametrization, etc., 
+that will be covered during the tutorial
 
 ---
 ### <span style="color:purple">Unit tests with Pytest library</span>
 
-#### Running all previous tests using pytest
+#### Additional options to pytest command 
 
-- create a directory with all functions written as python scripts
-
-- create separate python scripts that contain all previously written tests
-
-- run `pytest` within the directory
-  ```bash
-  pytest
-  ```
+TODO
 - try a `-v` option
   ```bash
   pytest -v
   ```
 --
+Full list of option:
 
-&nbsp;
+- `-h` (`--help`) option
+  ```bash
+  pytest -h
+  ```
 
-- an exemplary directory with all functions and tests can be found [here](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/pytest_solutions)
 
 
 ---
 ### <span style="color:purple">Unit tests with Pytest library</span>
 
 
-#### Use pytest features to rewrite your tests sets
+#### TODO: Use pytest features to rewrite your tests sets
 
 - read about [parametrization](https://docs.pytest.org/en/latest/parametrize.html) and try to use it within your test functions
 
@@ -396,7 +366,7 @@ Which framework should you use?
 - an exemplary directory with all functions and tests can be found [here](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/pytest_mark_solutions)
 
 ---
-### <span style="color:purple">Continuous Integration</span>
+### TODO:<span style="color:purple">Continuous Integration</span>
 
 - Integrating the test suite into the development process
 
@@ -414,14 +384,22 @@ Which framework should you use?
 Example of travis file from Nipype project is [here](https://github.com/nipy/nipype/blob/master/.travis.yml).
 
 ---
-### <span style="color:purple">External resources</span>
+### TODO<span style="color:purple">External resources</span>
 
 - [Software Carpentry](http://katyhuff.github.io/python-testing/index.html)
 
 - [Nice presentation with hands-on examples](https://github.com/ASPP/testing_debugging_profiling)
 
-- [Neurohackweek: Satra's slides](https://github.com/neurohackweek/nhw-lesson-testing)
 ---
+
+### TODO<span style="color:purple">Acknowledgements</span>
+
+- PSF
+- MIT, ReproNim
+-Caltech
+---
+
+
 name: inverse
 layout: true
 class: center, middle, inverse
