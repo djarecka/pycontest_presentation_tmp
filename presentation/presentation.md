@@ -366,12 +366,12 @@ Full list of option:
 - an exemplary directory with all functions and tests can be found [here](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/pytest_mark_solutions)
 
 ---
-### <span style="color:purple">Automate testing with Continuous Integration</span>
+### <span style="color:purple">Automate testing </span>
 
   - Pros:
-      - Automatically build and check the code every time you (and others) change it
-      - Immediate feedback
-      - Integrate tests into your work flow
+      - Build and check the code every time you (and others) change it
+      - Get immediate feedback
+      - Easily integrate testing into your work flow
       &nbsp;
       - Use various environments for testing the code
 
@@ -379,11 +379,17 @@ Full list of option:
 
   - Continuous Integration Services
 
-      - Travis CI
-      - CircleCI
+      - [Travis CI][https://travis-ci.org/]
+      - [CircleCI][https://circleci.com/]
       - ...
 
-  <img src="img/travis1-crop.png" width="80%" />                                     
+  <img src="img/travis1-crop.png" width="90%" />                                     
+
+
+---
+### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
+
+- Todo
 
 ---
 ### TODO<span style="color:purple">External resources</span>
