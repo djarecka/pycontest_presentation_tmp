@@ -366,13 +366,13 @@ Full list of option:
 - an exemplary directory with all functions and tests can be found [here](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/pytest_mark_solutions)
 
 ---
-### TODO:<span style="color:purple">Continuous Integration</span>
+### <span style="color:purple">Automate testing(!): Continuous Integration</span>
 
-- Integrating the test suite into the development process
-
-  - Building and checking the code every time the repository changes
-  - Using various environments for testing the code
-
+  - Build and check the code every time you (and collaborators) change code
+  - Provide immediate feedback on the changes
+  - Integrate tests into your daily work flow
+  &nbsp;
+  - Allows to use various environments for testing the code
 
   &nbsp;
 
@@ -380,8 +380,7 @@ Full list of option:
 
   - Travis CI
   - CircleCI
-
-Example of travis file from Nipype project is [here](https://github.com/nipy/nipype/blob/master/.travis.yml).
+  - ...
 
 ---
 ### TODO<span style="color:purple">External resources</span>
