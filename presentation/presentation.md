@@ -383,7 +383,7 @@ Full list of option:
       - CircleCI
       - ...
 
-  ![](img/travis1-crop.pdf){width=65%}
+  ![test](img/travis1-crop.pdf)
 
 ---
 ### TODO<span style="color:purple">External resources</span>
