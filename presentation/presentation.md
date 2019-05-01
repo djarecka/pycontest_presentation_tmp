@@ -389,11 +389,14 @@ Full list of option:
 ---
 ### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
 
+- Have GitHub account
 - Create Travis CI account at [travis-ci.org](https://travis-ci.org/)
   (sign in with your GitHub account)
+- Choose the repos you want to test with Travis CI
 
-
- 
+- Add .travis.yml file to your repo.
+- This file should contain all the commands needed
+  to build your project on a fresh Linux or OSX machine.
 
 ---
 ### TODO<span style="color:purple">External resources</span>
