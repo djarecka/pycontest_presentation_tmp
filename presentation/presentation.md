@@ -438,7 +438,7 @@ Full list of option:
 ---
 ### <span style="color:purple">Check test coverage: Codecov </span>
 
-- Create codecov account at [codecov.io](codecov.io)
+- Create codecov account at [codecov.io](https://codecov.io)
   (sign in with your GitHub account)
 
 - Choose the repos you want to test with codecov
