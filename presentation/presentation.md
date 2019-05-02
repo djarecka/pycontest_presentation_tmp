@@ -491,6 +491,11 @@ Examples of tests:
 
 ANIA
 
+### <span style="color:purple">Regresion test </span>
+
+
+
+
 ---
 ### <span style="color:purple">Pytest + Hypothesis </span>
 
