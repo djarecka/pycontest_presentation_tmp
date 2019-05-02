@@ -15,10 +15,6 @@ layout: false
 - ### Testing tools
 
 ---
-name: inverse
-layout: true
-class: center, middle, inverse
----
 ## Who are we?
 
 --
