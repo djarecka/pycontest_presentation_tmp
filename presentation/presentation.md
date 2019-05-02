@@ -384,7 +384,7 @@ Assumptions:
 ---
 #### <span style="color:purple"> Simulation of moving balls in a box...</span>
 
-<video src="img/sim.mp4" width="320" height="200" controls preload></video>
+<video src="img/sim.mp4"></video>
 
 ---
 ### <span style="color:purple">Unit tests with Pytest library</span>
