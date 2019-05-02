@@ -451,6 +451,18 @@ Examples of tests:
 
 - In the absence of truth we can test if our results are the same as some reference simulation.
 
+--
+
+<span style="color:purple">**Add a regression test.**</span>
+```bash
+~/pycontest/tests/test_regression.py
+```
+Example solution:
+```bash
+~/pycontest/solutions/test_regression.py
+```
+
+check [np.testing.assert_allclose](https://docs.scipy.org/doc/numpy/reference/generated/numpy.testing.assert_allclose.html)
 
 ---
 ### <span style="color:purple">Pytest + Hypothesis </span>
