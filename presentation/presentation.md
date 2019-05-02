@@ -422,7 +422,7 @@ Full list of option:
 
 - get notifications via email, slack, etc
 
-- get fancy badge on your repo
+- get fancy badge on your repo - in README.md add:
 
   ```bash
 
@@ -466,7 +466,7 @@ Full list of option:
 ---
 ### <span style="color:purple">Check test coverage: Codecov </span>
 
-- get fancy badge on your repo
+- get fancy badge on your repo - in README.md add:
 
   ```bash
   | **Build Status**                                                                                                       
@@ -493,7 +493,7 @@ Full list of option:
 
 - PSF
 - MIT, ReproNim
--Caltech
+- Caltech
 ---
 
 
