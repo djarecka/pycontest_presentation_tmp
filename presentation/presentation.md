@@ -366,12 +366,12 @@ Full list of option:
 - an exemplary directory with all functions and tests can be found [here](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/pytest_mark_solutions)
 
 ---
-### <span style="color:purple">Automate testing </span>
+### <span style="color:purple">Automated testing </span>
 
   - Pros:
       - Build and check the code every time you (and others) change it
       - Get immediate feedback
-      - Easily integrate testing into your work flow
+      - Easily integrate testing into your workflow
       &nbsp;
       - Use various environments for testing the code
 
@@ -387,7 +387,7 @@ Full list of option:
 
 
 ---
-### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
+### <span style="color:purple">Automated testing: Integrate Travis CI with GitHub </span>
 
 - Have GitHub account
 
@@ -415,7 +415,7 @@ Full list of option:
 - see Travis CI test report at GitHub
 
 ---
-### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
+### <span style="color:purple">Automated testing: Integrate Travis CI with GitHub </span>
 
 - you can specify in settings when Travis CI should be run
   (every new pull, every commit, branches)
@@ -507,14 +507,13 @@ Full list of option:
     - keep any analysis / plotting code you create as tests
     - automate
 ---
+  <img src="img/all_tests.png" width="90%" />                                     
+---
 
 ### TODO<span style="color:purple">Acknowledgements</span>
 
 - PSF
 - MIT, ReproNim
-- Caltech, [CliMA](https://clima.caltech.edu/)
-
-  <img src="img/all_tests.png" width="90%" />                                     
 
 ---
 
