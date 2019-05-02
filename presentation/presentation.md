@@ -491,23 +491,6 @@ Full list of option:
 
 - [Obey the Testing Goat!](https://www.obeythetestinggoat.com/)
 
-
----
-### <span style="color:purple">Scientific testing examples</span>
-
-- No excuses for not writing unit tests!
-
-- Sometimes you can use tests proposed in existing publications [example](https://github.com/igfuw/libmpdataxx/tree/master/tests/mp3_paper_2018_JCP)
-
-- Sometimes you are left with regresion testing against your own published results
-  (But wouldn't it be great to be able to automatically generate all your previousely 
-   published plots and results?)
-
-- Try to:
-    - write your code and your tests together
-    - keep any analysis / plotting code you create as tests
-    - automate
-   
 ---
 ### <span style="color:purple">Scientific testing examples</span>
 
@@ -523,9 +506,6 @@ Full list of option:
     - write your code and your tests together
     - keep any analysis / plotting code you create as tests
     - automate
-
-  <img src="img/all_tests.png" width="90%" />                                     
- 
 ---
 
 ### TODO<span style="color:purple">Acknowledgements</span>
@@ -533,6 +513,9 @@ Full list of option:
 - PSF
 - MIT, ReproNim
 - Caltech, [CliMA](https://clima.caltech.edu/)
+
+  <img src="img/all_tests.png" width="90%" />                                     
+
 ---
 
 
