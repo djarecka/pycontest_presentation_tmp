@@ -493,7 +493,7 @@ Examples of tests:
 ### <span style="color:purple">Pytest + Hypothesis </span>
 
 - [Hypothesis](https://hypothesis.readthedocs.io/en/latest/)
-  Allows to specify expected range of values of your inputs.
+  package allows to specify expected range of values of your inputs.
   It tests for many combinations of values of input parameters.
 
 - tutorial here at Pycon: [Escape from auto-manual testing with Hypothesis!](https://us.pycon.org/2019/schedule/presentation/91/) 
@@ -507,7 +507,7 @@ Examples of tests:
    
   @given(mass1  = st.floats(min_value=.1, max_value=1e3),                        
          mass2  = st.floats(min_value=.1, max_value=1e3))                        
-  def test_TODO(mass1, mass2):  
+  def test_hypothesis(mass1, mass2):  
   ```
 
 ---
