@@ -191,7 +191,7 @@ layout: false
 
 #### Python environment and text editor
 
-If you haven't prepare your environment, you can still do it:
+If you haven't prepared your environment, you can still do it:
 
 - Install conda: [follow instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 
@@ -373,7 +373,7 @@ layout: false
 
 Assumptions:
 
-- all balls have the same size, but can have different masses,
+- all balls have the same sizes, but can have different masses,
 
 - box is rectangular,
 
@@ -432,7 +432,7 @@ Tests will be in:
 Solution for the code is in:
 
 ```bash
-~/pycontest/pycontest/transport.py
+~/pycontest/solutions/transport.py
 ```
 
 --
@@ -443,7 +443,7 @@ Solution for the code is in:
 
 #### <span style="color:purple"> Testing collisions: 1d </span>
 
-##### Discuss the possible tests for 1d transport.
+##### Discuss the possible tests for 1d elastic collisions.
 
 --
 
