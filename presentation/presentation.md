@@ -502,13 +502,18 @@ Full list of option:
   (But wouldn't it be nice to be able to automatically generate all your previousely 
    published plots and results?)
 
+  &nbsp;
+
 - Try to:
     - write your code and your tests together
     - think of any analysis / plotting code as a potential test
     - automate
 ---
+  &nbsp;
+  <p align="center">
   <img src="img/all_tests.png" width="90%" />                                     
   taken from [Keith Smiley](https://twitter.com/SmileyKeith/status/557657449503948802)
+  </p>
 ---
 
 ### TODO<span style="color:purple">Acknowledgements</span>
