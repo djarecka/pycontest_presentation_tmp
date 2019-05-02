@@ -333,7 +333,7 @@ Assumptions:
 - particles have different initial location and velocities.
 
 ---
-#### <span style="color:purple"> Simulation of moving balls in a box...</span>
+#### <span style="color:purple"> Simulation of moving particles in a box...</span>
 
 <video src="img/sim.mp4" controls preload></video>
 
@@ -348,7 +348,7 @@ Assumptions:
 
 ---
 
-#### <span style="color:purple"> Simulation of moving balls in a box...</span>
+#### <span style="color:purple"> Simulation of moving particles in a box...</span>
 
 It might be hard (impossible?) to write a test that can give the absolute answer...
 
@@ -362,7 +362,7 @@ Think about individual processes:
 
 - transport
 
-- balls collision 
+- particles collision 
 
 - hitting the wall
 
