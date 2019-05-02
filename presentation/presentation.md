@@ -510,10 +510,8 @@ Full list of option:
     - automate
 ---
   &nbsp;
-  <p align="center">
-  <img src="img/all_tests.png" width="90%" />                                     
+  <img src="img/all_tests.png" width="90%" style=centerme />                                     
   taken from [Keith Smiley](https://twitter.com/SmileyKeith/status/557657449503948802)
-  </p>
 ---
 
 ### TODO<span style="color:purple">Acknowledgements</span>
