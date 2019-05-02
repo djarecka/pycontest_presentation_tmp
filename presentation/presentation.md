@@ -412,6 +412,7 @@ Full list of option:
   script:
       - py.test -s -v tests
   ```
+- see Travis CI test report at GitHub
 
 ---
 ### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
@@ -433,6 +434,15 @@ Full list of option:
   [travis-url]: https://travis-ci.com/your_github_account/your_project
 
   ```
+
+---
+### <span style="color:purple">Check test coverage: Codecov </span>
+
+- Create codecov account at [codecov.io](codecov.io)
+  (sign in with your GitHub account)
+
+- Choose the repos you want to test with codecov
+
 
 ---
 ### TODO<span style="color:purple">External resources</span>
