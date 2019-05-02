@@ -443,8 +443,6 @@ Examples of tests:
 
 ---
 
-ANIA
-
 ### <span style="color:purple">Regresion test </span>
 
 
@@ -460,7 +458,6 @@ ANIA
 - tutorial here at Pycon: [Escape from auto-manual testing with Hypothesis!](https://us.pycon.org/2019/schedule/presentation/91/) 
 
 --
-
 - our simple example will need:
 
   ```python
@@ -470,18 +467,15 @@ ANIA
          mass2  = st.floats(min_value=.1, max_value=1e3))                        
   def test_hypothesis(mass1, mass2):  
   ```
-
 --
-
-- Add a test that uses hypothesis to check if kinetic energy is conserved.
-
+<span style="color:purple">**Add a test that uses hypothesis to check if kinetic energy is conserved.**</span>
 Tests draft:
 ```bash
-~/pycontest/tests/test_ellastic_collision.py
+~/pycontest/tests/test_hypothesis.py
 ```
 Example solution:
 ```bash
-~/pycontest/solutions/test_ellastic_collision.py
+~/pycontest/solutions/test_hypothesis.py
 ```
 
 ---
