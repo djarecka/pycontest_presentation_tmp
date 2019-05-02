@@ -502,7 +502,7 @@ ANIA
 
 &nbsp;
 
-- a simple example will need:
+- our simple example will need:
 
   ```python
   from hypothesis import given, strategies as st                                 
@@ -511,6 +511,19 @@ ANIA
          mass2  = st.floats(min_value=.1, max_value=1e3))                        
   def test_hypothesis(mass1, mass2):  
   ```
+
+- Add a test that uses hypothesis to check if kinetic energy is conserved.
+
+Tests draft:
+```bash
+~/pycontest/tests/test_ellastic_collision.py
+```
+Example solution:
+```bash
+~/pycontest/solutions/test_ellastic_collision.py
+```
+
+- 
 
 ---
 ### <span style="color:purple">Automated testing </span>
