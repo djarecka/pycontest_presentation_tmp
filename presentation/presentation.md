@@ -386,7 +386,90 @@ Assumptions:
 
 <video src="img/sim.mp4" controls preload></video>
 
+--
+Does it work?
+
+--
+Is it correct?
+
 ---
+
+#### <span style="color:purple"> Simulation of moving balls in a box...</span>
+
+It might be hard (impossible?) to write a test that can give the absolute answer...
+
+--
+
+...but we can think about multiple tests that increase our confidence!
+
+--
+
+Think about individual processes: 
+
+- transport
+
+- balls collision 
+
+- hitting the wall
+
+---
+
+#### <span style="color:purple"> Testing transport </span>
+
+Code is in:
+
+```bash
+~/pycontest/pycontest/transport.py
+```
+
+Tests will be in:
+```bash
+~/pycontest/tests/test_transport.py
+```
+
+--
+
+Solution for the code is in:
+
+```bash
+~/pycontest/pycontest/transport.py
+```
+
+--
+
+- read about [skip/xfail](https://docs.pytest.org/en/latest/skipping.html)
+
+---
+
+#### <span style="color:purple"> Testing collisions: 1d </span>
+
+##### Discuss the possible tests for 1d transport.
+
+--
+
+Code is in:
+
+```bash
+~/pycontest/pycontest/ellastic_collision.py
+```
+
+Tests will be in:
+```bash
+~/pycontest/tests/test_ellastic_collision.py
+```
+
+--
+
+Examples of tests:
+
+```bash
+~/pycontest/pycontest/test_ellastic_collision.py
+```
+
+--
+
+-  check [pytest.approx](https://docs.pytest.org/en/latest/reference.html#pytest-approx)
+
 ### <span style="color:purple">Unit tests with Pytest library</span>
 
 
@@ -403,9 +486,6 @@ Assumptions:
 
 --
 
-&nbsp;
-
-- an exemplary directory with all functions and tests can be found [here](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/pytest_mark_solutions)
 
 ---
 ### TODO:<span style="color:purple">Continuous Integration</span>
