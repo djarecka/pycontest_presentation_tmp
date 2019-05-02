@@ -679,7 +679,7 @@ Example solution:
 
 - Check [the website](http://www.repronim.org/teach.html) for more resources
 
-<img src="img/logo.png" width="80%" style=centerme /> 
+<img src="img/logo.png" width="50%" style=centerme /> 
 ---
 
 
