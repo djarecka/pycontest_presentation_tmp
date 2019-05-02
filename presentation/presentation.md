@@ -2,22 +2,12 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-# Writing unit and regression tests
+# To trust or to test?: Automated testing of scientific projects with pytest
 
 ---
 layout: false
-##<span style="color:purple">Outline</span>
+##<span style="color:purple">Who are we?</span>
 
-- ### Learning objectives
-- ### Requirements
-- ### Introduction
-- ### Exercises
-- ### Testing tools
-
----
-## Who are we?
-
---
 
 - Dorota Jarecka 
    - McGovern Institute of Brain Research, MIT
@@ -29,7 +19,7 @@ layout: false
 
 ---
 
-## Learning objectives
+## <span style="color:purple">Learning objectives</span>
 ---
 layout: false
 
@@ -41,7 +31,7 @@ layout: false
 
 - What are the testing frameworks in Python?
 
-- What is Continuos Integration?
+- What is Continuous Integration?
 
 
 ---
@@ -95,7 +85,7 @@ layout: false
 
 --
 
-**Including tests is one of the possible safeguards when writing software!**
+<span style="color:purple">**Including tests is one of the possible safeguards when writing software!**</span>
 
 ---
 ### <span style="color:purple"> Why do we test software?</span>
