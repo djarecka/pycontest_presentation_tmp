@@ -397,6 +397,13 @@ Solution for the code is in:
 
 #### <span style="color:purple"> Testing collisions: 1d </span>
 
+<img src="img/eq_ec.png" width="90%" />
+
+---
+
+#### <span style="color:purple"> Testing collisions: 1d </span>
+
+
 ##### Discuss the possible tests for 1d elastic collisions.
 
 --
