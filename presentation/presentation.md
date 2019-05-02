@@ -490,37 +490,156 @@ Examples of tests:
 
 
 ---
-### TODO:<span style="color:purple">Continuous Integration</span>
+### <span style="color:purple">Automate testing </span>
 
-- Integrating the test suite into the development process
-
-  - Building and checking the code every time the repository changes
-  - Using various environments for testing the code
-
+  - Pros:
+      - Build and check the code every time you (and others) change it
+      - Get immediate feedback
+      - Easily integrate testing into your work flow
+      &nbsp;
+      - Use various environments for testing the code
 
   &nbsp;
 
-- Continuous Integration Services
+  - Continuous Integration Services
 
-  - Travis CI
-  - CircleCI
+      - [Travis CI](https://travis-ci.org/)
+      - [CircleCI](https://circleci.com/)
+      - ...
 
-Example of travis file from Nipype project is [here](https://github.com/nipy/nipype/blob/master/.travis.yml).
+  <img src="img/travis1-crop.png" width="90%" />                                     
+
 
 ---
-### TODO<span style="color:purple">External resources</span>
+### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
+
+- Have GitHub account
+
+- Create Travis CI account at [travis-ci.org](https://travis-ci.org/)
+  (sign in with your GitHub account)
+
+- Choose the repos you want to test with Travis CI
+
+- Add `.travis.yml` file to your repo.
+  This file should contain all the commands needed
+  to build your project on a fresh Linux or OSX machine.
+
+  ```bash
+  language: python
+  
+  python:
+      - "3.6"
+  
+  install:
+      - pip install scipy numpy matplotlib hypothesis
+  
+  script:
+      - py.test -s -v tests
+  ```
+- see Travis CI test report at GitHub
+
+---
+### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
+
+- you can specify in settings when Travis CI should be run
+  (every new pull, every commit, branches)
+
+- get notifications via email, slack, etc
+
+- get fancy badge in your repo: in `README.md` add:
+
+  ```bash
+
+  | **Build Status**                                                                                                       
+  |:------------------------------------|
+  | [![travis][travis-img]][travis-url] |
+
+  [travis-img]: https://travis-ci.com/your_github_account/your_repo.svg?branch=master
+  [travis-url]: https://travis-ci.com/your_github_account/your_repo
+  ```
+
+---
+### <span style="color:purple">Check test coverage: Codecov </span>
+
+- Create Codecov account at [codecov.io](https://codecov.io)
+  (sign in with your GitHub account)
+
+- Choose the repos you want to test with Codecov
+
+- Update your `.travis.yml`:
+ 
+  ```bash
+  language: python
+  
+  python:
+      - "3.6"
+  
+  install:
+      - pip install scipy numpy matplotlib hypothesis
+      - pip install codecov pytest-cov
+  
+  script:
+      - py.test --cov=./ --cov-report xml:cov.xml tests                          
+
+  after_success:                                                                 
+      -  codecov --file cov.xml 
+
+  ```
+- see Codecov report at GitHub
+
+---
+### <span style="color:purple">Check test coverage: Codecov </span>
+
+- get fancy badge on your repo: in `README.md` add:
+
+  ```bash
+  | **Build Status**                                                                                                       
+  |:----------------------------------------------------------------------------|
+  | [![travis][travis-img]][travis-url]  [![codecov][codecov-img]][codecov-url] |
+
+  [travis-img]: https://travis-ci.com/your_github_account/your_repo.svg?branch=master
+  [travis-url]: https://travis-ci.com/your_github_account/your_repo
+
+  [codecov-img]: https://codecov.io/gh/your_github_account/your_repo/branch/master/graph/badge.svg
+  [codecov-url]: https://codecov.io/gh/your_github_account/your_repo          
+  ```
+
+---
+### <span style="color:purple">External resources</span>
 
 - [Software Carpentry](http://katyhuff.github.io/python-testing/index.html)
 
 - [Nice presentation with hands-on examples](https://github.com/ASPP/testing_debugging_profiling)
 
+- [pythontesting blog](http://pythontesting.net/) and [pythontesting book](https://pragprog.com/book/bopytest/python-testing-with-pytest)
+
+- [Obey the Testing Goat!](https://www.obeythetestinggoat.com/)
+
+---
+### <span style="color:purple">Scientific testing examples</span>
+
+- No excuses for not writing unit tests!
+
+- Sometimes you can use tests proposed in [existing publications](https://github.com/igfuw/libmpdataxx/tree/master/tests/mp3_paper_2018_JCP)
+
+- Sometimes you are left with regresion testing against your [own published results](https://github.com/igfuw/libmpdataxx#3-to-reproduce-all-results-from-the-gmd-paper)
+  (But wouldn't it be nice to be able to automatically generate all your previousely 
+   published plots and results?)
+
+- Try to:
+    - write your code and your tests together
+    - keep any analysis / plotting code you create as tests
+    - automate
 ---
 
 ### TODO<span style="color:purple">Acknowledgements</span>
 
 - PSF
 - MIT, ReproNim
--Caltech
+- Caltech, [CliMA](https://clima.caltech.edu/)
+
+  <img src="img/all_tests.png" width="90%" />                                     
+
 ---
 
 
