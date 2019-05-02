@@ -463,7 +463,7 @@ Tests will be in:
 Examples of tests:
 
 ```bash
-~/pycontest/pycontest/test_ellastic_collision.py
+~/pycontest/solutions/test_ellastic_collision.py
 ```
 
 --
@@ -486,8 +486,10 @@ Examples of tests:
 
 - if your tests fail rewrite the function or at least use `pytest.mark.xfail`  and provide the `reason`
 
---
 
+---
+
+ANIA
 
 ---
 ### <span style="color:purple">Pytest + Hypothesis </span>
