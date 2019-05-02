@@ -481,11 +481,21 @@ Full list of option:
   ```
 
 ---
-### TODO<span style="color:purple">External resources</span>
+### <span style="color:purple">Scientific testing examples</span>
+
+
+
+---
+### <span style="color:purple">External resources</span>
 
 - [Software Carpentry](http://katyhuff.github.io/python-testing/index.html)
 
 - [Nice presentation with hands-on examples](https://github.com/ASPP/testing_debugging_profiling)
+
+- [pythontesting blog](http://pythontesting.net/)
+- [pythontesting book](https://pragprog.com/book/bopytest/python-testing-with-pytest)
+
+- [Obey the Testing Goat!](https://www.obeythetestinggoat.com/)
 
 ---
 
