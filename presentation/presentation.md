@@ -504,17 +504,17 @@ Full list of option:
 
 - Try to:
     - write your code and your tests together
-    - keep any analysis / plotting code you create as tests
+    - think of any analysis / plotting code you create as a potential test
     - automate
 ---
   <img src="img/all_tests.png" width="90%" />                                     
+  taken from [Keith Smiley](https://twitter.com/SmileyKeith/status/557657449503948802)
 ---
 
 ### TODO<span style="color:purple">Acknowledgements</span>
 
 - PSF
 - MIT, ReproNim
-
 ---
 
 
