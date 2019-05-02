@@ -369,8 +369,8 @@ Full list of option:
 ### <span style="color:purple">Pytest + Hypothesis </span>
 
 - [Hypothesis](https://hypothesis.readthedocs.io/en/latest/)
-  (Don't hardcode the input values used for testing. 
-   Instead specify their expected range of values and test for many combinations of values).
+  Allows to specify expected range of values of your inputs.
+  It tests for many combinations of values of input parameters.
 
 - tutorial here at Pycon: [Escape from auto-manual testing with Hypothesis!](https://us.pycon.org/2019/schedule/presentation/91/) 
 
