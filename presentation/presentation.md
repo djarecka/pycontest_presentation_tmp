@@ -374,17 +374,20 @@ Full list of option:
 
 - tutorial here at Pycon: [Escape from auto-manual testing with Hypothesis!](https://us.pycon.org/2019/schedule/presentation/91/) 
 
-  ```python
-  from hypothesis import given, strategies as st                                 
-  ```
+&nbsp;
+
+- a simple example will need:
 
   ```python
+  from hypothesis import given, strategies as st                                 
+
   @given(mass1  = st.floats(min_value=.1, max_value=1e3),                        
          mass2  = st.floats(min_value=.1, max_value=1e3))                        
   def test_TODO(mass1, mass2): 
-  
+
 
   ```
+
 ---
 ### <span style="color:purple">Automated testing </span>
 
