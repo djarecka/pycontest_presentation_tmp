@@ -505,7 +505,6 @@ Example solution:
       &nbsp;
       - Use various environments for testing the code
 --
-  &nbsp;
 
   - Continuous Integration Services
 
