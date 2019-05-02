@@ -470,6 +470,8 @@ Examples of tests:
 
 -  check [pytest.approx](https://docs.pytest.org/en/latest/reference.html#pytest-approx)
 
+---
+
 ### <span style="color:purple">Unit tests with Pytest library</span>
 
 
