@@ -422,7 +422,7 @@ Full list of option:
 
 - get notifications via email, slack, etc
 
-- get fancy badge on your repo - in README.md add:
+- get fancy badge in your repo: in `README.md` add:
 
   ```bash
 
@@ -466,7 +466,7 @@ Full list of option:
 ---
 ### <span style="color:purple">Check test coverage: Codecov </span>
 
-- get fancy badge on your repo - in README.md add:
+- get fancy badge on your repo: in `README.md` add:
 
   ```bash
   | **Build Status**                                                                                                       
@@ -481,29 +481,54 @@ Full list of option:
   ```
 
 ---
-### <span style="color:purple">Scientific testing examples</span>
-
-
-
----
 ### <span style="color:purple">External resources</span>
 
 - [Software Carpentry](http://katyhuff.github.io/python-testing/index.html)
 
 - [Nice presentation with hands-on examples](https://github.com/ASPP/testing_debugging_profiling)
 
-- [pythontesting blog](http://pythontesting.net/)
-- [pythontesting book](https://pragprog.com/book/bopytest/python-testing-with-pytest)
+- [pythontesting blog](http://pythontesting.net/) and [pythontesting book](https://pragprog.com/book/bopytest/python-testing-with-pytest)
 
 - [Obey the Testing Goat!](https://www.obeythetestinggoat.com/)
 
+
+---
+### <span style="color:purple">Scientific testing examples</span>
+
+- No excuses for not writing unit tests!
+
+- Sometimes you can use tests proposed in existing publications [example](https://github.com/igfuw/libmpdataxx/tree/master/tests/mp3_paper_2018_JCP)
+
+- Sometimes you are left with regresion testing against your own published results
+  (But wouldn't it be great to be able to automatically generate all your previousely 
+   published plots and results?)
+
+- The key is to write your code and your tests together and to maintain your 
+  testing / analysis / plotting code along with your source code.
+   
+---
+### <span style="color:purple">Scientific testing examples</span>
+
+- No excuses for not writing unit tests!
+
+- Sometimes you can use tests proposed in existing publications [example](https://github.com/igfuw/libmpdataxx/tree/master/tests/mp3_paper_2018_JCP)
+
+- Sometimes you are left with regresion testing against your own published results
+  (But wouldn't it be great to be able to automatically generate all your previousely 
+   published plots and results?)
+
+- The key is to write your code and your tests together and to maintain your 
+  testing / analysis / plotting code along with your source code.
+
+  <img src="img/all_tests.png" width="90%" />                                     
+ 
 ---
 
 ### TODO<span style="color:purple">Acknowledgements</span>
 
 - PSF
 - MIT, ReproNim
-- Caltech
+- Caltech, [CliMA](https://clima.caltech.edu/)
 ---
 
 
