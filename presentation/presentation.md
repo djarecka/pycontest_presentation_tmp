@@ -21,7 +21,6 @@ layout: false
 
 ### <span style="color:purple">Learning objectives</span>
 
-layout: false
 
 - Why do we write tests?
 
@@ -35,40 +34,59 @@ layout: false
 
 
 ---
-### Setup
+### <span style="color:purple">Setup</span>
 
 
-#### Python environment and text editor
+#### Python environment
 
-If you haven't prepared your environment, you can still do it:
+- If you haven't prepared your environment, you can still do it:
 
-- Install conda: [follow instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
+  - Install conda: [follow instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 
-- creating an environment:
-```bash
-$ conda create --name pycon numpy scipy matplotlib pytest hyphothesis
-```
+  - creating an environment:
+  ```bash
+  $ conda create --name pycon numpy scipy matplotlib pytest hyphothesis
+  ```
 
---
 
-Checking if you have library
-```bash
-$ python --version
-Python 3.7.3
-```
+- Checking if you have libraries
+    ```bash
+    $ python --version
+    Python 3.7.3
+    ```
+    
+    ```bash
+    $ python -c "import matplotlib; print(matplotlib.__version__)"
+    3.0.3
+    ```
 
-```bash
-$ python -c "import matplotlib; print(matplotlib.__version__)"
-3.0.3
-```
+---
+### <span style="color:purple">Setup</span>
 
---
+
+#### Text editor and  ffmpeg (for animation)
+
 
 - you should have your favourite text editor, if you don't, please install jupyter, eg.:
 
 ```bash
 $ conda install jupyter
 ```
+
+- You can download ffmpeg from [here](https://ffmpeg.org/download.html)
+
+
+---
+### <span style="color:purple">Setup</span>
+
+
+#### Git and GitHub
+
+
+- if you have to install Git, follow the [instructions](https://git-scm.com/downloads)
+  - you can check by typing in your terminal `git --version`
+
+- if you don't have a GitHub account, please [join]( https://github.com/join)
 
 ---
 name: inverse
