@@ -503,22 +503,26 @@ Full list of option:
   (But wouldn't it be great to be able to automatically generate all your previousely 
    published plots and results?)
 
-- The key is to write your code and your tests together and to maintain your 
-  testing / analysis / plotting code along with your source code.
+- Try to:
+    - write your code and your tests together
+    - keep any analysis / plotting code you create as tests
+    - automate
    
 ---
 ### <span style="color:purple">Scientific testing examples</span>
 
 - No excuses for not writing unit tests!
 
-- Sometimes you can use tests proposed in existing publications [example](https://github.com/igfuw/libmpdataxx/tree/master/tests/mp3_paper_2018_JCP)
+- Sometimes you can use tests proposed in [existing publications](https://github.com/igfuw/libmpdataxx/tree/master/tests/mp3_paper_2018_JCP)
 
-- Sometimes you are left with regresion testing against your own published results
-  (But wouldn't it be great to be able to automatically generate all your previousely 
+- Sometimes you are left with regresion testing against your [own published results](https://github.com/igfuw/libmpdataxx#3-to-reproduce-all-results-from-the-gmd-paper)
+  (But wouldn't it be nice to be able to automatically generate all your previousely 
    published plots and results?)
 
-- The key is to write your code and your tests together and to maintain your 
-  testing / analysis / plotting code along with your source code.
+- Try to:
+    - write your code and your tests together
+    - keep any analysis / plotting code you create as tests
+    - automate
 
   <img src="img/all_tests.png" width="90%" />                                     
  
