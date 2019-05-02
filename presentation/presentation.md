@@ -401,7 +401,7 @@ Solution for the code is in:
 
 ---
 
-#### <span style="color:purple"> Testing collisions: 1d </span>
+#### <span style="color:purple"> Testing collisions </span>
 
 
 ##### Discuss the possible tests for 1d elastic collisions.
@@ -411,12 +411,12 @@ Solution for the code is in:
 Code is in:
 
 ```bash
-~/pycontest/pycontest/ellastic_collision.py
+~/pycontest/pycontest/elastic_collision.py
 ```
 
 Tests will be in:
 ```bash
-~/pycontest/tests/test_ellastic_collision.py
+~/pycontest/tests/test_elastic_collision_1d.py
 ```
 
 --
@@ -424,29 +424,52 @@ Tests will be in:
 Examples of tests:
 
 ```bash
-~/pycontest/solutions/test_ellastic_collision.py
+~/pycontest/solutions/test_elastic_collision_1d.py
 ```
-
---
 
 -  check [pytest.approx](https://docs.pytest.org/en/latest/reference.html#pytest-approx)
 
+--
+
+- After testing 1d, we can think about tests for 2d
+
+Tests will be in:
+```bash
+~/pycontest/tests/test_elastic_collision_2d.py
+```
+
 ---
 
-### <span style="color:purple">Unit tests with Pytest library</span>
+#### <span style="color:purple"> Testing simulation </span>
 
 
-#### TODO: Use pytest features to rewrite your tests sets
+- Testing entire simulation
+
+Code is in:
+
+```bash
+~/pycontest/pycontest/simulation.py
+```
+
+Tests will be in:
+```bash
+~/pycontest/tests/test_simulation.py
+```
 
 - read about [parametrization](https://docs.pytest.org/en/latest/parametrize.html) and try to use it within your test functions
 
-- read about [skip/xfail](https://docs.pytest.org/en/latest/skipping.html) and
- and [exceptions check](https://docs.pytest.org/en/latest/assert.html#assertions-about-expected-exceptions), try to use it in your existing tests and write new tests
+- read about [exceptions check](https://docs.pytest.org/en/latest/assert.html#assertions-about-expected-exceptions), try to use it in your existing tests and write new tests
 
-- check if your functions still pass all tests
+--
 
-- if your tests fail rewrite the function or at least use `pytest.mark.xfail`  and provide the `reason`
+- Using fixture in the tests
 
+Check the test:
+```bash
+~/pycontest/tests/test_simulation_fixture.py
+```
+
+- read about [fixture](https://docs.pytest.org/en/latest/fixture.html)
 
 ---
 
