@@ -45,7 +45,7 @@ layout: false
 
   - creating an environment:
   ```bash
-  $ conda create --name pycon numpy scipy matplotlib pytest hyphothesis
+  $ conda create --name pycon numpy scipy matplotlib pytest hypothesis
   ```
 
 
@@ -67,7 +67,7 @@ layout: false
 #### Text editor and  ffmpeg (for animation)
 
 
-- you should have your favourite text editor, if you don't, please install jupyter, eg.:
+- you should have your favorite text editor, if you don't, please install jupyter, eg.:
 
 ```bash
 $ conda install jupyter
@@ -283,7 +283,7 @@ Which framework should you use?
   pytest tests_myfunctions.py::test_one_specific_test
   ```
 
-- many useful features including fixtures, test parametrization, etc., 
+- many useful features including fixtures, test parameterization, etc., 
 that will be covered during the tutorial
 
 ---
@@ -404,12 +404,12 @@ Solution for the code is in:
 Code is in:
 
 ```bash
-~/pycontest/pycontest/ellastic_collision.py
+~/pycontest/pycontest/elastic_collision.py
 ```
 
 Tests will be in:
 ```bash
-~/pycontest/tests/test_ellastic_collision.py
+~/pycontest/tests/test_elastic_collision.py
 ```
 
 --
@@ -417,7 +417,7 @@ Tests will be in:
 Examples of tests:
 
 ```bash
-~/pycontest/solutions/test_ellastic_collision.py
+~/pycontest/solutions/test_elastic_collision.py
 ```
 
 --
@@ -443,11 +443,11 @@ Examples of tests:
 
 ---
 
-### <span style="color:purple">Regresion test </span>
+### <span style="color:purple">Regression test </span>
 
 - In scientific computing sometimes (often?) we don't know what is the ''correct'' output
 
-- We can eyball the plots we create and deem them reasonable, but errors are still possible.
+- We can eyeball the plots we create and deem them reasonable, but errors are still possible.
 
 - In the absence of truth we can test if our current results are the same as our reference results.
 
@@ -627,8 +627,8 @@ Example solution:
 
 - Sometimes you can use tests proposed in [existing publications](https://github.com/igfuw/libmpdataxx/tree/master/tests/mp3_paper_2018_JCP)
 
-- Sometimes you are left with regresion testing against your [own published results](https://github.com/igfuw/libmpdataxx#3-to-reproduce-all-results-from-the-gmd-paper)
-  (But wouldn't it be nice to be able to automatically generate all your previousely 
+- Sometimes you are left with regression testing against your [own published results](https://github.com/igfuw/libmpdataxx#3-to-reproduce-all-results-from-the-gmd-paper)
+  (But wouldn't it be nice to be able to automatically generate all your previously 
    published plots and results?)
 
   &nbsp;
@@ -643,7 +643,7 @@ Example solution:
   taken from [Keith Smiley](https://twitter.com/SmileyKeith/status/557657449503948802)
 ---
 
-### TODO<span style="color:purple">Acknowledgements</span>
+### TODO<span style="color:purple">Acknowledgments</span>
 
 - PSF
 - MIT, ReproNim
