@@ -429,10 +429,9 @@ Full list of option:
   | **Build Status**                                                                                                       
   |:------------------------------------|
   | [![travis][travis-img]][travis-url] |
-                                                                               
-  [travis-img]: https://travis-ci.com/your_github_account/your_project.svg?branch=master
-  [travis-url]: https://travis-ci.com/your_github_account/your_project
 
+  [travis-img]: https://travis-ci.com/your_github_account/your_repo.svg?branch=master
+  [travis-url]: https://travis-ci.com/your_github_account/your_repo
   ```
 
 ---
@@ -461,6 +460,24 @@ Full list of option:
   after_success:                                                                 
       -  codecov --file cov.xml 
 
+  ```
+- see Codecov report at GitHub
+
+---
+### <span style="color:purple">Check test coverage: Codecov </span>
+
+- get fancy badge on your repo
+
+  ```bash
+  | **Build Status**                                                                                                       
+  |:----------------------------------------------------------------------------|
+  | [![travis][travis-img]][travis-url]  [![codecov][codecov-img]][codecov-url] |
+
+  [travis-img]: https://travis-ci.com/your_github_account/your_repo.svg?branch=master
+  [travis-url]: https://travis-ci.com/your_github_account/your_repo
+
+  [codecov-img]: https://codecov.io/gh/your_github_account/your_repo/branch/master/graph/badge.svg
+  [codecov-url]: https://codecov.io/gh/your_github_account/your_repo          
   ```
 
 ---
