@@ -396,7 +396,7 @@ Full list of option:
 
 - Choose the repos you want to test with Travis CI
 
-- Add .travis.yml file to your repo.
+- Add `.travis.yml` file to your repo.
   This file should contain all the commands needed
   to build your project on a fresh Linux or OSX machine.
 
@@ -411,6 +411,27 @@ Full list of option:
   
   script:
       - py.test -s -v tests
+  ```
+
+---
+### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
+
+- you can specify in settings when Travis CI should be run
+  (every new pull, every commit, branches)
+
+- get notifications via email, slack, etc
+
+- get fancy badge on your repo
+
+  ```bash
+
+  | **Build Status**                                                                                                       
+  |:------------------------------------|
+  | [![travis][travis-img]][travis-url] |
+                                                                               
+  [travis-img]: https://travis-ci.com/your_github_account/your_project.svg?branch=master
+  [travis-url]: https://travis-ci.com/your_github_account/your_project
+
   ```
 
 ---
