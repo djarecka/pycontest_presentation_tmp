@@ -504,7 +504,7 @@ Full list of option:
 
 - Try to:
     - write your code and your tests together
-    - think of any analysis / plotting code you create as a potential test
+    - think of any analysis / plotting code as a potential test
     - automate
 ---
   <img src="img/all_tests.png" width="90%" />                                     
