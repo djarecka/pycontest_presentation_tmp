@@ -445,7 +445,11 @@ Examples of tests:
 
 ### <span style="color:purple">Regresion test </span>
 
+- In scientific computing sometimes (often?) we don't know what is the ''correct'' output
 
+- We can eyball the plots we create and deem them reasonable, but errors are still possible.
+
+- In the absence of truth we can test if our results are the same as some reference simulation.
 
 
 ---
@@ -469,7 +473,6 @@ Examples of tests:
   ```
 --
 <span style="color:purple">**Add a test that uses hypothesis to check if kinetic energy is conserved.**</span>
-Tests draft:
 ```bash
 ~/pycontest/tests/test_hypothesis.py
 ```
@@ -487,7 +490,7 @@ Example solution:
       - Easily integrate testing into your workflow
       &nbsp;
       - Use various environments for testing the code
-
+--
   &nbsp;
 
   - Continuous Integration Services
