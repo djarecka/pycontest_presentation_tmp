@@ -215,66 +215,12 @@ layout: false
 
 --
 
-- Writing software tests for your scientific code is:
+#### Writing software tests for your scientific code is:
 
   - translating your ideas for verification to programming code
 
   - automating the process of verification, so you can do it on a regular basis
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
-## Exercises
----
-layout: false
-TODO
-#### All notebooks with solutions to the following exercises can be found in the [repository](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/solutions)
-
----
-### <span style="color:purple">Assert statement</span>
-
-&nbsp;
-
-```bash
-assert Expression[, Arguments]
-```
-- Python evaluates the Expression to either True or False
-
-- if the Expression is false, `assert` returns an `AssertionError`
-
-
-- TODO: a rendered version of a notebook with examples can be found  [here](http://nbviewer.jupyter.org/github/nipy/workshops/blob/master/170327-nipype/notebooks/testing/solutions/asserts.ipynb)
----
-### <span style="color:purple">Assert statement</span>
-
-- Examples:
-  ```python
-  assert True
-  ```
-  ```python
-  assert False
-  ```
-  ```python
-  assert 1 + 2 == 3
-  ```
-  ```python
-  assert 2**0.5 < 1.5
-  ```
-  ```python
-  assert 2 != 3
-  ```
-
-  ```python
-  assert type(2) is int
-  ```
-  ```python
-  assert 2 in [1,2,3]
-  ```
-  ```python
-  assert 2 not in [1,2,3]
-  ```
 
 ---
 name: inverse
@@ -314,15 +260,14 @@ Which framework should you use?
 - straightforward asserting with the assert statement
 
   ```python
-  def my_factorial(n):
-      if n == 1 or n == 0:
-          return 1
-      else:
-          return n * my_factorial(n-1)
+  def test_1():
+      assert 4 - 3 == 1
 
-  def test_factorial_1():
-      assert my_factorial(1) == 1
+  def test_2():
+      assert 4/3 > 6/5
 
+  def test_3():
+      assert "l" in "lalala"
   ```
 
 - helpful traceback and failing assertion reporting
@@ -333,9 +278,9 @@ Which framework should you use?
   # discovers all tests in all subdirectories
   pytest
   # runs all test from test_random.py file only
-  pytest tests_factorial.py
+  pytest tests_myfunctions.py
   # runs one specific test
-  pytest tests_factorial.py::test_factorial_1
+  pytest tests_myfunctions.py::test_one_specific_test
   ```
 
 - many useful features including fixtures, test parametrization, etc., 
@@ -346,15 +291,22 @@ that will be covered during the tutorial
 
 #### Additional options to pytest command 
 
-TODO
-- try a `-v` option
+- `-v` (`--verbose`): increase verbosity
   ```bash
   pytest -v
   ```
---
-Full list of option:
 
-- `-h` (`--help`) option
+- `-s`: shortcut for --capture=no (can see print statements)
+  ```bash
+  pytest -s
+  ```
+
+- `--pdb`: start the interactive Python debugger on errors
+  ```bash
+  pytest --pdb
+  ```
+
+- `-h` (`--help`): full list of option
   ```bash
   pytest -h
   ```
@@ -368,28 +320,31 @@ class: center, middle, inverse
 ---
 layout: false
 
-#### <span style="color:purple"> Simulation of moving balls in a box...</span>
+#### <span style="color:purple"> Simulation of moving particles in a box...</span>
 
 Assumptions:
 
-- all balls have the same sizes, but can have different masses,
+- all particles have the same sizes, but can have different masses,
 
 - box is rectangular,
 
-- all balls collisions are elastic, 
+- all collisions are elastic, 
 
-- balls have different initial location and velocities.
+- particles have different initial location and velocities.
 
 ---
 #### <span style="color:purple"> Simulation of moving balls in a box...</span>
 
 <video src="img/sim.mp4" controls preload></video>
 
---
-Does it work?
 
 --
-Is it correct?
+
+- Does it work?
+
+--
+
+- Is it correct?
 
 ---
 
