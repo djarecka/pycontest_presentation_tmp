@@ -366,6 +366,26 @@ Full list of option:
 - an exemplary directory with all functions and tests can be found [here](https://github.com/nipy/workshops/tree/master/170327-nipype/notebooks/testing/pytest_mark_solutions)
 
 ---
+### <span style="color:purple">Pytest + Hypothesis </span>
+
+- [Hypothesis](https://hypothesis.readthedocs.io/en/latest/)
+  (Don't hardcode the input values used for testing. 
+   Instead specify their expected range of values and test for many combinations of values).
+
+- tutorial here at Pycon: [Escape from auto-manual testing with Hypothesis!](https://us.pycon.org/2019/schedule/presentation/91/) 
+
+  ```python
+  from hypothesis import given, strategies as st                                 
+  ```
+
+  ```python
+  @given(mass1  = st.floats(min_value=.1, max_value=1e3),                        
+         mass2  = st.floats(min_value=.1, max_value=1e3))                        
+  def test_TODO(mass1, mass2): 
+  
+
+  ```
+---
 ### <span style="color:purple">Automated testing </span>
 
   - Pros:
