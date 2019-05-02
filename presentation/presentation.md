@@ -277,7 +277,7 @@ Which framework should you use?
   ```bash
   # discovers all tests in all subdirectories
   pytest
-  # runs all test from test_random.py file only
+  # runs all test from test_myfunction.py file only
   pytest tests_myfunctions.py
   # runs one specific test
   pytest tests_myfunctions.py::test_one_specific_test
@@ -320,7 +320,7 @@ class: center, middle, inverse
 ---
 layout: false
 
-#### <span style="color:purple"> Simulation of moving particles in a box...</span>
+### <span style="color:purple"> Simulation of moving particles in a box...</span>
 
 Assumptions:
 
@@ -362,7 +362,7 @@ Think about individual processes:
 
 - transport
 
-- particles collision 
+- particles collisions 
 
 - hitting the wall
 
@@ -411,12 +411,12 @@ Solution for the code is in:
 Code is in:
 
 ```bash
-~/pycontest/pycontest/elastic_collision.py
+~/pycontest/pycontest/elastic_collisions.py
 ```
 
 Tests will be in:
 ```bash
-~/pycontest/tests/test_elastic_collision_1d.py
+~/pycontest/tests/test_elastic_collisions_1d.py
 ```
 
 --
@@ -424,18 +424,18 @@ Tests will be in:
 Examples of tests:
 
 ```bash
-~/pycontest/solutions/test_elastic_collision_1d.py
+~/pycontest/solutions/test_elastic_collisions_1d.py
 ```
 
 -  check [pytest.approx](https://docs.pytest.org/en/latest/reference.html#pytest-approx)
 
 --
 
-- After testing 1d, we can think about tests for 2d
+##### After testing 1d, we can think about tests for 2d
 
 Tests will be in:
 ```bash
-~/pycontest/tests/test_elastic_collision_2d.py
+~/pycontest/tests/test_elastic_collisions_2d.py
 ```
 
 ---
@@ -443,7 +443,7 @@ Tests will be in:
 #### <span style="color:purple"> Testing simulation </span>
 
 
-- Testing entire simulation
+##### Testing entire simulation
 
 Code is in:
 
@@ -462,7 +462,7 @@ Tests will be in:
 
 --
 
-- Using fixture in the tests
+##### Using fixture in the tests
 
 Check the test:
 ```bash
@@ -644,11 +644,13 @@ Example solution:
 
 - [Software Carpentry](http://katyhuff.github.io/python-testing/index.html)
 
-- [Nice presentation with hands-on examples](https://github.com/ASPP/testing_debugging_profiling)
-
 - [pythontesting blog](http://pythontesting.net/) and [pythontesting book](https://pragprog.com/book/bopytest/python-testing-with-pytest)
 
 - [Obey the Testing Goat!](https://www.obeythetestinggoat.com/)
+
+--
+
+- Examples of animation taken from [this tutorial](http://jakevdp.github.io/blog/2012/08/18/matplotlib-animation-tutorial/?ref=analisted)
 
 ---
 ### <span style="color:purple">Scientific testing examples</span>
@@ -673,13 +675,13 @@ Example solution:
   taken from [Keith Smiley](https://twitter.com/SmileyKeith/status/557657449503948802)
 ---
 
-### TODO<span style="color:purple">Acknowledgments</span>
+### <span style="color:purple">Acknowledgments</span>
 
-- Part of the presentation comes from ReproNim teaching materials
+- Big part of the presentation comes from ReproNim teaching materials
 
 - Check [the website](http://www.repronim.org/teach.html) for more resources
 
-<img src="img/logo.png" width="50%" style=centerme /> 
+<img src="img/logo.png" width="35%" style=centerme /> 
 ---
 
 
