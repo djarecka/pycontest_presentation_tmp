@@ -73,12 +73,9 @@ layout: false
 $ conda install jupyter
 ```
 
+#### ffmpeg (for animation)
+
 - You can download ffmpeg from [here](https://ffmpeg.org/download.html)
-
-
----
-### <span style="color:purple">Setup</span>
-
 
 #### Git and GitHub
 
