@@ -400,18 +400,18 @@ Full list of option:
   This file should contain all the commands needed
   to build your project on a fresh Linux or OSX machine.
 
-```bash
-language: python
-
-python:
-    - "3.6"
-
-install:
-    - pip install scipy numpy matplotlib
-
-script:
-    - py.test -s -v tests
-```
+  ```bash
+  language: python
+  
+  python:
+      - "3.6"
+  
+  install:
+      - pip install scipy numpy matplotlib
+  
+  script:
+      - py.test -s -v tests
+  ```
 
 ---
 ### TODO<span style="color:purple">External resources</span>
