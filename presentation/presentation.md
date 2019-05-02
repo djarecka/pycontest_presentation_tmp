@@ -6,21 +6,21 @@ class: center, middle, inverse
 
 ---
 layout: false
-##<span style="color:purple">Who are we?</span>
+###<span style="color:purple">Who are we?</span>
 
 
-- Dorota Jarecka 
+- <span style="color:purple">Dorota Jarecka</span> 
    - McGovern Institute of Brain Research, MIT
    - PhD in Physics
    
-- Anna Jaruga
+- <span style="color:purple">Anna Jaruga</span>
    - Environmental Science and Engineering, Caltech
    - PhD in Physics
 
 ---
 
-## <span style="color:purple">Learning objectives</span>
----
+### <span style="color:purple">Learning objectives</span>
+
 layout: false
 
 - Why do we write tests?
@@ -33,6 +33,42 @@ layout: false
 
 - What is Continuous Integration?
 
+
+---
+### Setup
+
+
+#### Python environment and text editor
+
+If you haven't prepared your environment, you can still do it:
+
+- Install conda: [follow instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
+
+- creating an environment:
+```bash
+$ conda create --name pycon numpy scipy matplotlib pytest hyphothesis
+```
+
+--
+
+Checking if you have library
+```bash
+$ python --version
+Python 3.7.3
+```
+
+```bash
+$ python -c "import matplotlib; print(matplotlib.__version__)"
+3.0.3
+```
+
+--
+
+- you should have your favourite text editor, if you don't, please install jupyter, eg.:
+
+```bash
+$ conda install jupyter
+```
 
 ---
 name: inverse
@@ -110,15 +146,19 @@ layout: false
 
 - makes you think about desirable output
 
+--
+
 - improves readability of your code
    
    - good usage examples for others and your future self
    
    - helps to reuse your code
 
+--
+
 - raises your confidence when developing the code
 
-&nbsp;
+
 
 
 ---
@@ -167,48 +207,6 @@ layout: false
   - automating the process of verification, so you can do it on a regular basis
 
 ---
-name: inverse
-layout: true
-class: center, middle, inverse
----
-## Setup
----
-layout: false
-
-#### Python environment and text editor
-
-If you haven't prepared your environment, you can still do it:
-
-- Install conda: [follow instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
-
-- creating an environment:
-```bash
-$ conda create --name pycon numpy scipy matplotlib pytest hyphothesis
-```
-
---
-
-Checking if you have library
-```bash
-$ python --version
-Python 3.7.3
-```
-
-```bash
-$ python -c "import matplotlib; print(matplotlib.__version__)"
-3.0.3
-```
-
---
-
-- you should have your favourite text editor, if you don't, please install jupyter, eg.:
-
-```bash
-$ conda install jupyter
-```
-
----
-
 name: inverse
 layout: true
 class: center, middle, inverse
