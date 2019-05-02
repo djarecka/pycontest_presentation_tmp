@@ -675,8 +675,11 @@ Example solution:
 
 ### TODO<span style="color:purple">Acknowledgments</span>
 
-- PSF
-- MIT, ReproNim
+- Part of the presentation comes from ReproNim teaching materials
+
+- Check [the website](http://www.repronim.org/teach.html) for more resources
+
+<img src="img/logo.png" width="80%" style=centerme /> 
 ---
 
 
