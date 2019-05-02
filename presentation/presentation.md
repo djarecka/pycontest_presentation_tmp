@@ -407,7 +407,7 @@ Full list of option:
       - "3.6"
   
   install:
-      - pip install scipy numpy matplotlib
+      - pip install scipy numpy matplotlib hypothesis
   
   script:
       - py.test -s -v tests
@@ -438,11 +438,30 @@ Full list of option:
 ---
 ### <span style="color:purple">Check test coverage: Codecov </span>
 
-- Create codecov account at [codecov.io](https://codecov.io)
+- Create Codecov account at [codecov.io](https://codecov.io)
   (sign in with your GitHub account)
 
-- Choose the repos you want to test with codecov
+- Choose the repos you want to test with Codecov
 
+- Update your `.travis.yml`:
+ 
+  ```bash
+  language: python
+  
+  python:
+      - "3.6"
+  
+  install:
+      - pip install scipy numpy matplotlib hypothesis
+      - pip install codecov pytest-cov
+  
+  script:
+      - py.test --cov=./ --cov-report xml:cov.xml tests                          
+
+  after_success:                                                                 
+      -  codecov --file cov.xml 
+
+  ```
 
 ---
 ### TODO<span style="color:purple">External resources</span>
