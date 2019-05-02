@@ -449,7 +449,9 @@ Examples of tests:
 
 - We can eyball the plots we create and deem them reasonable, but errors are still possible.
 
-- In the absence of truth we can test if our results are the same as some reference simulation.
+- In the absence of truth we can test if our current results are the same as our reference results.
+
+- This ensures that the functionality we already have is not lost when we add new features or update packages.
 
 --
 
