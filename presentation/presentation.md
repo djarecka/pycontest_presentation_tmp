@@ -490,12 +490,35 @@ Examples of tests:
 
 
 ---
-### <span style="color:purple">Automate testing </span>
+### <span style="color:purple">Pytest + Hypothesis </span>
+
+- [Hypothesis](https://hypothesis.readthedocs.io/en/latest/)
+  Allows to specify expected range of values of your inputs.
+  It tests for many combinations of values of input parameters.
+
+- tutorial here at Pycon: [Escape from auto-manual testing with Hypothesis!](https://us.pycon.org/2019/schedule/presentation/91/) 
+
+&nbsp;
+
+- a simple example will need:
+
+  ```python
+  from hypothesis import given, strategies as st                                 
+   
+  @given(mass1  = st.floats(min_value=.1, max_value=1e3),                        
+         mass2  = st.floats(min_value=.1, max_value=1e3))                        
+  def test_TODO(mass1, mass2): 
+   
+   
+  ```
+
+---
+### <span style="color:purple">Automated testing </span>
 
   - Pros:
       - Build and check the code every time you (and others) change it
       - Get immediate feedback
-      - Easily integrate testing into your work flow
+      - Easily integrate testing into your workflow
       &nbsp;
       - Use various environments for testing the code
 
@@ -511,7 +534,7 @@ Examples of tests:
 
 
 ---
-### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
+### <span style="color:purple">Automated testing: Integrate Travis CI with GitHub </span>
 
 - Have GitHub account
 
@@ -539,7 +562,7 @@ Examples of tests:
 - see Travis CI test report at GitHub
 
 ---
-### <span style="color:purple">Automate testing: Integrate Travis CI with GitHub </span>
+### <span style="color:purple">Automated testing: Integrate Travis CI with GitHub </span>
 
 - you can specify in settings when Travis CI should be run
   (every new pull, every commit, branches)
@@ -626,20 +649,22 @@ Examples of tests:
   (But wouldn't it be nice to be able to automatically generate all your previousely 
    published plots and results?)
 
+  &nbsp;
+
 - Try to:
     - write your code and your tests together
-    - keep any analysis / plotting code you create as tests
+    - think of any analysis / plotting code as a potential test
     - automate
+---
+  &nbsp;
+  <img src="img/all_tests.png" width="90%" style=centerme />                                     
+  taken from [Keith Smiley](https://twitter.com/SmileyKeith/status/557657449503948802)
 ---
 
 ### TODO<span style="color:purple">Acknowledgements</span>
 
 - PSF
 - MIT, ReproNim
-- Caltech, [CliMA](https://clima.caltech.edu/)
-
-  <img src="img/all_tests.png" width="90%" />                                     
-
 ---
 
 
