@@ -500,7 +500,7 @@ ANIA
 
 - tutorial here at Pycon: [Escape from auto-manual testing with Hypothesis!](https://us.pycon.org/2019/schedule/presentation/91/) 
 
-&nbsp;
+--
 
 - our simple example will need:
 
@@ -512,6 +512,8 @@ ANIA
   def test_hypothesis(mass1, mass2):  
   ```
 
+--
+
 - Add a test that uses hypothesis to check if kinetic energy is conserved.
 
 Tests draft:
@@ -522,8 +524,6 @@ Example solution:
 ```bash
 ~/pycontest/solutions/test_ellastic_collision.py
 ```
-
-- 
 
 ---
 ### <span style="color:purple">Automated testing </span>
