@@ -45,7 +45,7 @@ layout: false
 
   - creating an environment:
   ```bash
-  $ conda create --name pycon numpy scipy matplotlib pytest hyphothesis
+  $ conda create --name pycon numpy scipy matplotlib pytest hypothesis
   ```
 
 
@@ -67,7 +67,7 @@ layout: false
 #### Text editor and  ffmpeg (for animation)
 
 
-- you should have your favourite text editor, if you don't, please install jupyter, eg.:
+- you should have your favorite text editor, if you don't, please install jupyter, eg.:
 
 ```bash
 $ conda install jupyter
@@ -283,7 +283,7 @@ Which framework should you use?
   pytest tests_myfunctions.py::test_one_specific_test
   ```
 
-- many useful features including fixtures, test parametrization, etc., 
+- many useful features including fixtures, test parameterization, etc., 
 that will be covered during the tutorial
 
 ---
@@ -411,12 +411,12 @@ Solution for the code is in:
 Code is in:
 
 ```bash
-~/pycontest/pycontest/ellastic_collision.py
+~/pycontest/pycontest/elastic_collision.py
 ```
 
 Tests will be in:
 ```bash
-~/pycontest/tests/test_ellastic_collision.py
+~/pycontest/tests/test_elastic_collision.py
 ```
 
 --
@@ -424,7 +424,7 @@ Tests will be in:
 Examples of tests:
 
 ```bash
-~/pycontest/solutions/test_ellastic_collision.py
+~/pycontest/solutions/test_elastic_collision.py
 ```
 
 --
@@ -450,28 +450,57 @@ Examples of tests:
 
 ---
 
-ANIA
+### <span style="color:purple">Regression test </span>
+
+- In scientific computing sometimes (often?) we don't know what is the ''correct'' output
+
+- We can eyeball the plots we create and deem them reasonable, but errors are still possible.
+
+- In the absence of truth we can test if our current results are the same as our reference results.
+
+- This ensures that the functionality we already have is not lost when we add new features or update packages.
+
+--
+
+<span style="color:purple">**Add a regression test.**</span>
+```bash
+~/pycontest/tests/test_regression.py
+```
+Example solution:
+```bash
+~/pycontest/solutions/test_regression.py
+```
+
+check [np.testing.assert_allclose](https://docs.scipy.org/doc/numpy/reference/generated/numpy.testing.assert_allclose.html)
 
 ---
 ### <span style="color:purple">Pytest + Hypothesis </span>
 
 - [Hypothesis](https://hypothesis.readthedocs.io/en/latest/)
-  Allows to specify expected range of values of your inputs.
+  package allows to specify expected range of values of your inputs.
   It tests for many combinations of values of input parameters.
 
 - tutorial here at Pycon: [Escape from auto-manual testing with Hypothesis!](https://us.pycon.org/2019/schedule/presentation/91/) 
 
-&nbsp;
-
-- a simple example will need:
+--
+- our simple example will need:
 
   ```python
   from hypothesis import given, strategies as st                                 
    
   @given(mass1  = st.floats(min_value=.1, max_value=1e3),                        
          mass2  = st.floats(min_value=.1, max_value=1e3))                        
-  def test_TODO(mass1, mass2):  
+  def test_hypothesis(mass1, mass2):  
   ```
+--
+<span style="color:purple">**Add a test that uses hypothesis to check if kinetic energy is conserved.**</span>
+```bash
+~/pycontest/tests/test_hypothesis.py
+```
+Example solution:
+```bash
+~/pycontest/solutions/test_hypothesis.py
+```
 
 ---
 ### <span style="color:purple">Automated testing </span>
@@ -482,8 +511,7 @@ ANIA
       - Easily integrate testing into your workflow
       &nbsp;
       - Use various environments for testing the code
-
-  &nbsp;
+--
 
   - Continuous Integration Services
 
@@ -606,8 +634,8 @@ ANIA
 
 - Sometimes you can use tests proposed in [existing publications](https://github.com/igfuw/libmpdataxx/tree/master/tests/mp3_paper_2018_JCP)
 
-- Sometimes you are left with regresion testing against your [own published results](https://github.com/igfuw/libmpdataxx#3-to-reproduce-all-results-from-the-gmd-paper)
-  (But wouldn't it be nice to be able to automatically generate all your previousely 
+- Sometimes you are left with regression testing against your [own published results](https://github.com/igfuw/libmpdataxx#3-to-reproduce-all-results-from-the-gmd-paper)
+  (But wouldn't it be nice to be able to automatically generate all your previously 
    published plots and results?)
 
   &nbsp;
@@ -622,7 +650,7 @@ ANIA
   taken from [Keith Smiley](https://twitter.com/SmileyKeith/status/557657449503948802)
 ---
 
-### TODO<span style="color:purple">Acknowledgements</span>
+### TODO<span style="color:purple">Acknowledgments</span>
 
 - PSF
 - MIT, ReproNim
